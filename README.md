@@ -1,24 +1,14 @@
 # Material Resume
 
-## Updated Material Resume: [Demo](http://kabirvirji.com/material-resume/material-resume.html)
+## [Demo](https://rrdelaney.github.io/material-resume/)
 
-### TODO
-- [ ] Size the main container to 850px x 1100px to match letter paper size (high priority)
-- [ ] Last line its own directive
-- [ ] Header links use scope variables
+## Latest versions
 
-## My version of the classic Taylor Swift material resume example. 
+```html
+<link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+```
 
-## Updates:
-
-1. One column so recruiters have an easier time reading (more like scanning 🙄) your resume
-2. Splash of colour 🌈 words can be bolded blue to stand out with the `<strong>` tag
-3. Header contact information includes links, put links in the JavaScript under `resumeHeading` and `header-icons`
-4. Last line can be used for interests, awards, etc.
-
-
-### Original Material Resume: [Demo](http://rdel.io/material-resume)
-<br>
 ## Getting Started
 
 1. Download the [`index.html`](https://github.com/rrdelaney/material-resume/blob/gh-pages/index.html) file
@@ -177,3 +167,8 @@ __Example__:
   </category-item>   
 </category>
 ```
+
+## Updating
+
+To update this resume to a newer version, copy the `<link>` and `<script>`
+tags you see at the top of this file and replace lines 13 and 14 with them.

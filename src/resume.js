@@ -101,18 +101,16 @@ angular.module('Resume', ['ngMaterial'])
   }
 })
 
-.directive('skillItem', function() {
-  return {
-    restrict: 'E',
-    scope: {
-      languages: '@',
-      technologies: '@'
-    },
-    transclude: true,
-    template: `<div class="category">
-        <h2 class="category-title md-body-2"><strong>Languages: </strong>{{languages}}</h2>&nbsp;
-        <h2 class="category-title md-body-2"><strong>Technologies: </strong>{{technologies}}</h2>
-        <ul class="category-bullets" ng-transclude></ul>
-    </div>`
-  }
+.component('categoryItem', {
+  controllerAs: 'r',
+  bindings: {
+    title: '@',
+    subtitle: '@'
+  },
+  transclude: true,
+  template: `<div class="category">
+    <h5 class="category-title md-body-2">{{r.title}}</h5>&nbsp;
+    <h5 class="category-subtitle md-caption">{{r.subtitle}}</h5>
+    <ul class="category-bullets" ng-transclude></ul>
+  </div>`
 })
